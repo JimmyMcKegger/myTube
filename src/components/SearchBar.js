@@ -1,7 +1,7 @@
 import React from 'react';
 
 class SearchBar extends React.Component {
-  state = { term: 'type here' };
+  state = { term: '' };
 
   onInputChange = event => {
     this.setState({ term: event.target.value});
@@ -21,6 +21,7 @@ class SearchBar extends React.Component {
                 <label>Video Search</label>
                  <input 
                  type="text" 
+                 placeholder='Search'
                  value={ this.state.term }
                  onChange={ this.onInputChange }
 
